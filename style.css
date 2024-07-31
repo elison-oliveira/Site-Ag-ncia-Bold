@@ -335,8 +335,58 @@ section.roda-pe{
 }
 
 
+.items-menu-mobile{
+    width:50%;
+    text-align: right;
+    display: none;
+}
+
+.items-menu-mobile i{
+    color:white;
+    position: relative;
+    top:15px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 768px) {
+
+    .items-menu-mobile{
+        display: block;
+       
+    }
+
+    .menu-mobile{
+        
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left:0;
+        top:65px;
+        background-color: white;
+        width:100%;
+        padding:15px 0;
+        text-align: center;
+    }
+
+    .show{
+        opacity: 1;
+    }
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin:8px 0;
+        color:rgb(40,40,40);
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom:1px solid rgb(40,40,40);
+        padding:8px 0;
+    }
 
     .lista-beneficios,.img-beneficios{
         width:100%;
@@ -363,5 +413,9 @@ section.roda-pe{
     section.marcas img{
         max-width: 300px;
         width:100%;
+    }
+
+    .items-menu{
+        display: none;
     }
 }
